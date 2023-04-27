@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Remine</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.8;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("/w3images/mac.jpg");
+      min-height: 100%;
+      text-decoration: none;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+      color: blue;
+      text-decoration: none;
+    }
+
+    .nav {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+
+    }
+
+    .nav1,
+    .nav2,
+    .nav3,
+    .nav4 {
+      margin: 5px;
+      padding: 5px;
+      text-decoration: none;
+      color: blue;
+
+    }
+
+    ul {
+      list-style: none;
+
+    }
+    .w3-quarter{
+        text-decoration: none;
+    }
+    .w3-large{
+        text-decoration: none;
+    }
+    .fa fa-desktop w3-margin-bottom w3-jumbo w3-center{
+        text-decoration: none;
+    }
+    .fa fa-heart w3-margin-bottom w3-jumbo{
+        text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="https://info.remine.com/" target="_blank" class="w3-bar-item w3-button w3-wide"><img
+          src="https://assets-global.website-files.com/6026a1a0afd16a6f17bbfd66/6026a6890f9e3eddafa0f39a_remine-logo.svg"
+          width="136" alt="" /></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3">
+        <a href="https://info.remine.com/about-us" target="_blank" class="w3-bar-item w3-button">ABOUT US</a>
+        <a href="https://info.remine.com/products" target="_blank" class="w3-bar-item w3-button">
+          <li class="fa fa-user"></li> PRODUCTS
+        </a>
+        <a href="https://info.remine.com/blog" target="_blank" class="w3-bar-item w3-button">
+          <li class="fa fa-th"></li> BLOG
+        </a>
+        <a href="https://support.remine.com/hc/en-us" target="_blank" class="w3-bar-item w3-button">
+          <li class="fa fa-usd"></li> SUPPORT CENTER
+        </a>
+        <a href="https://info.remine.com/contact-us" target="_blank" class="w3-bar-item w3-button">
+          <li class="fa fa-envelope"></li> CONTACT US
+        </a>
+        &nbsp;&nbsp;
+        <div class="nav">
+          <a href="/agentlogin/remine-agent-login" class="nav1">LOG IN:</a>
+          <a href="https://info.remine.com/agentlogin/remine-agent-login" class="nav2">Agent</a>
+          <a href="https://www.remine.com/login" class="nav2">Home Buyer</a>
+          <a href="/agentlogin/remine-agent-login" class="nav4">For Agents</a>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+      onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close </a>
+    <a href="https://info.remine.com/about-us" target="_blank" onclick="w3_close()"
+      class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button">BLOG</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="media" onclick="w3_close()" class="w3-bar-item w3-button">MEDIA</a>
+    <a href="#videos" onclick="w3_close()" class="w3-bar-item w3-button">VIDEOS</a>
+  </nav>
+
+
+  <!-- About Section -->
+  <div class="w3-container" style="padding:128px 16px" id="about">
+    <h3 class="w3-center"><strong>ABOUT THE COMPANY</strong></h3>
+    <p class="w3-center w3-large">Key features of our company</p>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+    </div>
+    <div class="wf-section">
+
+      <h1 data-w-id="8cad8b0f-2489-671f-4af2-e664c7f890e7" style="opacity:0" class="banner-heading">REIMAGINE
+        <br /><span class="text-span">the MLS</span>
+      </h1>
+      <p data-w-id="bea228e4-ae7e-a182-879a-94d1d7bbd119" style="opacity:0" class="banner-text">Remine is a modern
+        solution that brings MLS services, real estate professionals, home buyers, home sellers, and lenders together.
+      </p><a data-w-id="1356212b-04ea-ed77-62cf-93caf8a8febd" style="opacity:0"
+        href="https://remine1-090d280a88ad9d7480b7a92fe461845.webflow.io/about-us" class="theme-blue-btn w-button">Learn
+        More</a>
+    </div>
+    <div class="column-48 w-col w-col-7"><img
+        src="https://assets-global.website-files.com/6026a1a0afd16a6f17bbfd66/604154824c7b6141db7016b6_image%203.png"
+        img type="center" loading="lazy" alt="" class="image-40" /></div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="w3-quarter">
+    <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+    <p class="w3-large">Careers</p>
+    <p>We look for incredibly smart and motivated people. Our team members have a range of cultural, ethnic, social, and
+      economic backgrounds. We encourage people of all backgrounds to apply </p>
+    <a href="https://info.remine.com/careers" style="color:black" >
+  </div>
+
+  <div class="w3-quarter">
+    <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+    <p class="w3-large">Products</p>
+    <p>Full MLS system with unique workflows between Remine’s Add/Edit, Database, Remine Pro, and API solutions.</p>
+    <a href="https://info.remine.com/products" style="color:black">
+  </div>
+
+
+  <div class="w3-quarter">
+    <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+    <p class="w3-large">Data Marketplace</p>
+    <p>Tap into our modern public record marketplace to gain access to streamlined information that allows you to place
+      opportunity on a map by incorporating public, housing, people and mortgage records.</p>
+    <a href="https://info.remine.com/products" style="color:black">
+  </div>
+
+
+  <div class="w3-quarter">
+    <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+    <p class="w3-large">Opportunity</p>
+    <p>With Opportunity Pro, Remine powers your search by combining mortgage data and public records data onto a single
+      platform that delivers more actionable intelligence to real estate professionals than any other tool.</p>
+    <a href="https://info.remine.com/opportunity-pro" style="color:black">
+  </div>
+  </div>
+  </div>
+  <br>
+  <br>
+
+
+  <!-- Promo Section - "We know design" -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>WHO IS REMINE?</h3>
+        <p>Remine is a full MLS solution that reimagines the digital real estate journey. <br>
+          With every product line and platform feature, Remine is dedicated to being the flexible partner to the real
+          estate community. <br>
+          Our trainers and account managers take the time to get to know you and your needs, because no two clients are
+          alike.<br>
+          Intuitive in use, elegant in design, and powerful in practice. .</p>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center"><strong>THE TEAM</strong></h3>
+    <p class="w3-center w3-large">The ones who runs this company</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://cdn.theorg.com/8c4e5e3c-b2af-4179-b62d-a3ba53c5fc6d_thumb.jpg" alt="daniel"
+            style="width:100%">
+          <div class="w3-container">
+            <h3> Daniel Huertas</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Daniel Huertas is a Co-Founder at Remine, a real estate technology company with a next generation MLS
+              platform that is part of core functionality for real estate professionals.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://media.licdn.com/dms/image/C4D03AQGae9ntdMeyaA/profile-displayphoto-shrink_800_800/0/1605793232134?e=1687996800&v=beta&t=Rc5fx6N2qPeH-mfHPGC-GJkuucPRf-Y4kWBJXMq59Mg"
+            alt="teressa" style="width:100%">
+          <div class="w3-container">
+            <h3> Teresa Y. Jason Normandin</h3>
+            <p class="w3-opacity">vice president</p>
+            <p>Deep understanding of Implementation processes and methodology.
+              Excellent communication and organizational skills including experience in managing multiple accounts </p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img
+            src="https://media.licdn.com/dms/image/D5603AQFyXxxR2TzEpg/profile-displayphoto-shrink_800_800/0/1674408543680?e=1687996800&v=beta&t=2CsM2PawvY895WEvPaelGF9Brse8PkjxevKQAja_41I"
+            alt="allen" style="width:100%">
+          <div class="w3-container">
+            <h3>Allen Roznos</h3>
+            <p class="w3-opacity">customer sucess manager</p>
+            <p>Allen Roznos has a long and varied work experience. Allen began their career in 1986 as a System Support
+              Engineer at CoreLogic</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://cdn.theorg.com/010d8690-be01-403f-b80c-672f67c65127_thumb.jpg" alt="amir"
+            style="width:100%">
+          <div class="w3-container">
+            <h3>Amir Qadri</h3>
+            <p class="w3-opacity">VP Operation</p>
+            <p>Aamir Qadri is the VP Operations for Canada at Remine. Aamir has over 10 years of experience in sales and
+              business development, including 4 years as a realtor.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Section "Statistics" -->
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">40+</span>
+      <br>Markets
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">825000+</span>
+      <br>clients
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">50.1M+</span>
+      <br>Total Funding
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">150+</span>
+      <br>Meetings
+    </div>
+  </div>
+
+  <!-- Work Section -->
+  <div class="w3-container" style="padding:128px 16px" id="work">
+    <h3 class="w3-center"><strong>OUR WORK</strong></h3>
+    <p class="w3-center w3-large">What we've done for people</p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6">
+          <img src="https://assets.website-files.com/6026a1a0afd16a6f17bbfd66/6034de54b4e8c5db54705117_4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MLS 2.0"><strong>MLS 2.O</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://marismls.com/userfiles/kcfinder/images/Remine_laptop2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="remine pro"><strong>Remine pro</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://support.remine.com/hc/article_attachments/360059676691/Update_Listing_-_Select_Listing.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Add/edit"><strong>Add/Edit</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://i.ytimg.com/vi/lmeKhHvJP0E/maxresdefault.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="doccs transaction management"><strong>Docs Transaction Management</strong>
+        </div>
+      </div>
+    
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img src="https://assets.website-files.com/6026a1a0afd16a6f17bbfd66/6034e9aa77760ae6d2f3ab32_vectors%2Bimage-p-500.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="SSo dashboard"><strong>SSO Dashboard</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://realcomp.moveinmichigan.com/portals/0/Images/Articles/2020/June/remine_pro.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="database"><strong>Databse</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://www.farend.co.jp/blog/2017/02/redmine-api/redmine-api.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="API"><strong>API</strong>
+        </div>
+        <div class="w3-col l3 m6">
+          <img src="https://i0.wp.com/themlsblog.com/wp-content/uploads/2018/08/remine-header-v1.jpg?resize=1024%2C734&ssl=1" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="MLS Website"><strong>MLS Website</strong>
+        </div>
+      </div>
+      
+      <!-- Modal for full size images on click-->
+    </div>
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+    
+
+    <!-- Modal for full size images on click-->
+  </div>
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3><strong>Our Skills.</strong></h3>
+        <p>
+          Remine is an MLS platform in 40 markets and available to more than 825,000 agents and their clients. </p>
+        <p>Remine uses big data and machine learning to automate decisions and workflows for the most comprehensive
+          agent and consumer search experience.</p>
+        <p>Founded by Leo Pareja, Jonathan Spinetto, and Mark Schacknies.
+        </p>
+      </div>
+      <div class="w3-col m6">
+        <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>MLS</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Real Estate</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+        </div>
+        <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>AI</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3><strong>PRICING</strong></h3>
+    <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Cloud</li>
+          <li class="w3-padding-16"><b>10GB</b> Storage</li>
+          <li class="w3-padding-16"><b>10</b> Emails</li>
+          <li class="w3-padding-16"><b>10</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 45</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-red w3-xlarge w3-padding-48">iphone</li>
+          <li class="w3-padding-16"><b>25GB</b> Storage</li>
+          <li class="w3-padding-16"><b>25</b> Emails</li>
+          <li class="w3-padding-16"><b>25</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 199</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+      <div class="w3-third w3-section">
+        <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Android</li>
+          <li class="w3-padding-16"><b>50GB</b> Storage</li>
+          <li class="w3-padding-16"><b>50</b> Emails</li>
+          <li class="w3-padding-16"><b>50</b> Domains</li>
+          <li class="w3-padding-16"><b>Endless</b> Support</li>
+          <li class="w3-padding-16">
+            <h2 class="w3-wide">$ 100</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center"><strong>CONTACT</strong></h3>
+    <p class="w3-center w3-large"><strong>Subscribe to our newsletter</strong></p>
+    <div style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Vienna, Virginia, United States</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 855-217-0171</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: info@remine.com</p>
+      <br>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+      <!-- Image of location/map -->
+      
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="w3-black w3-animate-left">
+    <li>About Remine</li>
+    <p>Remine brings home buyers, home sellers, real estate agents, and lenders together on a single platform defined by
+      choice, clarity, and speed.</p><br><br>
+    <ul>
+      Quick Links
+      <li>About Us</li>
+      <li>Careers</li>
+      <li>Products</li>
+      <li>Data Marketplace</li>
+    </ul><br><br>
+    <li>Follow us</li>
+    <div class="w3-xlarge w3-section">
+      <li class="fa fa-instagram w3-hover-opacity"></li>
+      <li class="fa fa-facebook-official w3-hover-opacity"></li>
+      <li class="fa fa-pinterest-p w3-hover-opacity"></li>
+      <li class="fa fa-twitter w3-hover-opacity"></li>
+      <li class="fa fa-linkedin w3-hover-opacity"></li>
+    </div>
+    <p>Follow us <a href=img
+        src="https://assets-global.website-files.com/6026a1a0afd16a6f17bbfd66/6026a6890f9e3eddafa0f39a_remine-logo.svg"
+        width="136" alt="" target="_blank" class="w3-hover-text-green"></a></p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
